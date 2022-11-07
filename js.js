@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*let number = 4.6;
 let name = 'alex';
@@ -41,7 +41,6 @@ answers[2] = prompt('Сколько лет?', '');
 document.write(answers[2]);
 console.log(answers);*/
 
-
 /*const category = 'toys';
 
 console.log('https://uuu.com/' + category + '/' + '5');
@@ -83,7 +82,6 @@ const istCheked = true,
        console.log(istCheked && isClose)
        console.log(istCheked || !isClose)*/
 
-
 /*let question =  prompt('Как вас зовут?')
 if(question === null || question === ""){
     document.write('Привет незнакомец')
@@ -91,7 +89,6 @@ if(question === null || question === ""){
 document.write('Привет ' + question)
 };
 */
-
 
 /*const num = +prompt('Сколько вам лет?', '');*/
 
@@ -105,7 +102,6 @@ document.write(' ,прочь, молокосос');
 else {
     document.write(', напиши ответ мля');
 }*/
-
 
 /*(num === 50) ? document.write('ок') : document.write('error');
 
@@ -121,8 +117,6 @@ switch (num) {
         document.write('fuck');
         break;
 }*/
-
-
 
 /*let num = 50;
 
@@ -152,12 +146,9 @@ while (num < 65);
 
 */
 
-
 /*let srt = 1244241;
 let num = Number(srt);
 let str2 = String(num);*/
-
-
 
 /*let result = confirm ('Вам действительно сегогдня ДР?');
 let name = prompt('Ваше имя?', '');
@@ -198,14 +189,11 @@ if (userName === 'Админ') {
 }
 */
 
-
-
 /*let height = +prompt('Ваш размер?','');
 while (height == NaN){
   height = prompt('еще раз','');  
 }
 console.log(`Размер вашей ноги ${height ?? 23}`)*/
-
 
 /*let age = +prompt('Угадайте число', '');*/
 
@@ -263,7 +251,6 @@ switch (number) {
 }
 */
 
-
 /*let browser = prompt('какой браузер?',"");
 
 if (browser == "Edge"){
@@ -293,7 +280,6 @@ switch (number) {
     break;
 }*/
 
-
 /*function showMessage(name, age) {
 name = prompt('Name?', '');
 age = prompt('Name?', '');
@@ -316,7 +302,6 @@ let name = +prompt('Name?', ''),
 let result = sum(name, twoName);
 alert(result); 
 */
-
 
 /*function checkAge(age) {
 
@@ -347,7 +332,6 @@ function pow(x,n) {
   return (x * n)  
 }*/
 
-
 /*function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
@@ -361,7 +345,6 @@ function showCancel() {
 
 ask("Вы согласны?", showOk, showCancel);*/
 
-
 /*
 let sum = (a, b) => a * b;
 
@@ -369,7 +352,6 @@ console.log( sum (3, 10));
 
 
 let ask = (question, yes, no) => */
-
 
 /*let name = 'ivAn name:';
 
@@ -391,9 +373,6 @@ let test = "12.3px";
 console.log(Math.round(num));
 console.log(parseInt(test));
 console.log(parseFloat(test));*/
-
-
-
 
 /*let options = {
     name: 'test',
@@ -475,11 +454,6 @@ for (let key in user){
 
 */
 
-
-
-
-
-
 /*const arr = [12, 23, 31, 5, 1, 10];
 arr.sort(numSort);
 console.log(arr);
@@ -493,7 +467,6 @@ function numSort(a, b){
 console.log(arr.length);
 arr.pop();
 arr.push(12);*/
-
 
 /*arr.forEach(function(item, i, arr) {
   console.log(`Элемент массива ${item} идет по порядку ${i} в массиве ${arr}`);
@@ -512,7 +485,6 @@ for (let item in arr) {
     console.log(arr[item]);
 }
 */
-
 
 /*const woomen = prompt('', '');
 const whois = woomen.split(', ');
@@ -561,7 +533,6 @@ men.forEach(function(a, b, c){
 /*for (let i =0; i < men.length; i++){
     alert(men[i]);
 }*/
-
 
 /*function copy(oneMan) {
     let obgCopy = {};
@@ -642,20 +613,18 @@ const newBmw = {...bmw};
 
 console.log(newBmw);
 */
-// тест гитаааа
 
 const auto = {
-    mark: prompt('Марка авто?','ХЗ какая') ?? 'ХЗ какая',
-    price: prompt('Цена вашего ведра?','Оно бесценно') ?? 'Оно бесценно',
-    itsAuto: function() {
-        console.log(`Best vedro: ${auto.mark}, цвета ${auto.color}, po chene: ${auto.price}`);
-    }
+	mark: prompt('Марка авто?', 'ХЗ какая') ?? 'ХЗ какая',
+	price: prompt('Цена вашего ведра?', 'Оно бесценно') ?? 'Оно бесценно',
+	itsAuto: function () {
+		console.log(
+			`Best vedro: ${auto.mark}, цвета ${auto.color}, po chene: ${auto.price}`
+		);
+	},
 };
 
-
-auto.color = prompt('Цвет авто?','') ?? 'ХЗ какая';
-
-
+auto.color = prompt('Цвет авто?', '') ?? 'ХЗ какая';
 
 /*const auto2 = Object.create(auto);*/
 
@@ -668,36 +637,9 @@ if(auto.mark == null || auto.mark == ""){
 
 /*Object.setPrototypeOf(auto2, auto);*/
 
-
-function(){
-  prompt('SDF')
-}
 console.log();
 auto.itsAuto();
 
 console.log(auto);
 
 /*auto2.itsAuto();*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
