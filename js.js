@@ -1,16 +1,32 @@
 'use strict';
 
-// РїРµСЂРµРјРµРЅРЅС‹Рµ, РёРЅС‚РµСЂРїРѕР»СЏС†РёСЏ РґР°РЅРЅС‹С…
+
+
+
+
+
+
+
+
+
+// переменные, интерполяция данных
+
+
+
+
+
+
+
 
 /*
 let number = 4.6;
 let name = 'alex';
 
 
-console.log(name + 'РјРЅРµ' + number + 'Р»РµС‚')
+console.log(name + 'мне' + number + 'лет')
 console.log(number + 10)
 
-let full = 'РР»СЊСЏ' + 37 + 'Р»РµС‚';
+let full = 'Илья' + 37 + 'лет';
 
 const obj ={
     name: 'ivan',
@@ -26,23 +42,23 @@ console.log(obj.name);
 console.log(['clichka']);
 
 
-const result = confirm('СЃРєРѕР»СЊРєРѕ РІР°Рј Р»РµС‚?')
+const result = confirm('сколько вам лет?')
 console.log(result)
 
-const answer = prompt('Р§РµСЂРµР· СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Сѓ С‚РµР±СЏ Р”Р ?', 'РҐР—');
+const answer = prompt('Через сколько дней у тебя ДР?', 'ХЗ');
 console.log(answer);
 console.log(typeof(answer));
 
 alert(full);*/
 
-// РѕР±С‰Р·РµРЅРёРµ СЃ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+// общзение с пользователем
 
 /*
 const answers = [];
 
-answers[0] = prompt('РљР°Рє РІР°С€Рµ РёРјСЏ?', '');
-answers[1] = prompt('РљР°Рє РІР°С€Рµ С„Р°РјРёР»РёСЏ?', '');
-answers[2] = prompt('РЎРєРѕР»СЊРєРѕ Р»РµС‚?', '');
+answers[0] = prompt('Как ваше имя?', '');
+answers[1] = prompt('Как ваше фамилия?', '');
+answers[2] = prompt('Сколько лет?', '');
 
 document.write(answers[2]);
 console.log(answers);
@@ -55,12 +71,40 @@ console.log(`https://uuu.com/${category}/55555`);
 
 const user = 'user';
 
-alert(`РџСЂРёРІРµС‚, ${user}`);
+alert(`Привет, ${user}`);
 */
 
-// РРЅРєСЂРµРјРµРЅС‚/РґРµРєСЂРµРјРµРЅС‚
-// РћРїРµСЂР°С‚РѕСЂС‹ СЃСЂР°РІРЅРµРЅРёСЏ
-//РћРґРЅРѕР№ РёР· РЅР°РёР±РѕР»РµРµ С‡Р°СЃС‚С‹С… С‡РёСЃР»РѕРІС‹С… РѕРїРµСЂР°С†РёР№ СЏРІР»СЏРµС‚СЃСЏ СѓРІРµР»РёС‡РµРЅРёРµ РёР»Рё СѓРјРµРЅСЊС€РµРЅРёРµ РЅР° РµРґРёРЅРёС†Сѓ.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Инкремент/декремент
+// Операторы сравнения
+//Одной из наиболее частых числовых операций является увеличение или уменьшение на единицу.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 console.log('arr' + + 5 + 'two');
@@ -94,31 +138,60 @@ const istCheked = true,
        console.log(istCheked || !isClose)
 */
 
-// РЈСЃР»РѕРІРёСЏ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Условия
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
-let question =  prompt('РљР°Рє РІР°СЃ Р·РѕРІСѓС‚?')
+let question =  prompt('Как вас зовут?')
 if(question === null || question === ""){
-    document.write('РџСЂРёРІРµС‚ РЅРµР·РЅР°РєРѕРјРµС†')
+    document.write('Привет незнакомец')
  } else {
-document.write('РџСЂРёРІРµС‚ ' + question)
+document.write('Привет ' + question)
 };
 
 
-const num = +prompt('РЎРєРѕР»СЊРєРѕ РІР°Рј Р»РµС‚?', '');
+const num = +prompt('Сколько вам лет?', '');
 
 if (num === null || num === "") {
-    document.write(', РЅР°РїРёС€Рё РѕС‚РІРµС‚ РјР»СЏ')
+    document.write(', напиши ответ мля')
 } else if (num >= 18) {   
-document.write(', Р·Р°С…РѕРґРё');
+document.write(', заходи');
 } else if (num < 18 || num > 0){
-document.write(' ,РїСЂРѕС‡СЊ, РјРѕР»РѕРєРѕСЃРѕСЃ');
+document.write(' ,прочь, молокосос');
 }
 else {
-    document.write(', РЅР°РїРёС€Рё РѕС‚РІРµС‚ РјР»СЏ');
+    document.write(', напиши ответ мля');
 }
 
-(num === 50) ? document.write('РѕРє') : document.write('error');
+(num === 50) ? document.write('ок') : document.write('error');
 
 
 switch (num) {
@@ -126,7 +199,7 @@ switch (num) {
          document.write('error');
         break;
     case 50:
-        document.write('РѕРє');
+        document.write('ок');
         break;
     default: 
         document.write('fuck');
@@ -134,7 +207,37 @@ switch (num) {
 }
 */
 
-// Р¦РёРєР»С‹
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Циклы
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 let num = 50;
@@ -168,93 +271,93 @@ let srt = 1244241;
 let num = Number(srt);
 let str2 = String(num);
 
-let result = confirm ('Р’Р°Рј РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµРіРѕРіРґРЅСЏ Р”Р ?');
-let name = prompt('Р’Р°С€Рµ РёРјСЏ?', '');
+let result = confirm ('Вам действительно сегогдня ДР?');
+let name = prompt('Ваше имя?', '');
 
 
-(name == 'РР»СЊСЏ') ? console.log('Р­Р№ РїР°СЂРµРЅСЊ!') :  console.log('Р­С‚Рѕ РЅРµ РР»СЊСЏ');
-(name == 'РР»СЊСЏ') ? document.write('РР»СЋС…Р°, СЌС‚Рѕ СЃРЅРѕРІР° С‚С‹') : console.log('Р­');
+(name == 'Илья') ? console.log('Эй парень!') :  console.log('Это не Илья');
+(name == 'Илья') ? document.write('Илюха, это снова ты') : console.log('Э');
 
  console.log();
 
 if (name != null && result != false) {
- let number = +prompt('Р§РµСЂРµР· СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Сѓ РІР°СЃ Р”Р ?', '')
- console.log(`РџРѕР·РґСЂР°РІР»СЏРµРј, РІР°СЃ СЃ РґРЅРµРј Р РѕР¶РґРµРЅРёСЏ, ${name}`);
- console.log(`${name}, Р‘СѓРґРµРј РІР°СЃ РїРѕР·РґСЂР°РІР»СЏС‚СЊ С‡РµСЂРµР· ${number} РґРЅРµР№`);
+ let number = +prompt('Через сколько дней у вас ДР?', '')
+ console.log(`Поздравляем, вас с днем Рождения, ${name}`);
+ console.log(`${name}, Будем вас поздравлять через ${number} дней`);
 }else{
- alert(`РќРµР·РЅР°РєРѕРјРµС†, Р‘СѓРґРµРј РІР°СЃ РїРѕР·РґСЂР°РІР»СЏС‚СЊ С‡РµСЂРµР· С…СѓР№ Р·РЅР°РµС‚ СЃРєРѕР»СЊРєРѕ РґРЅРµР№`);   
+ alert(`Незнакомец, Будем вас поздравлять через хуй знает сколько дней`);   
 };
 
 
-let userName = prompt("РљС‚Рѕ С‚Р°Рј?", '');
+let userName = prompt("Кто там?", '');
 
-if (userName === 'РђРґРјРёРЅ') {
+if (userName === 'Админ') {
 
-  let pass = prompt('РџР°СЂРѕР»СЊ?', '');
+  let pass = prompt('Пароль?', '');
 
-  if (pass === 'РЇ РіР»Р°РІРЅС‹Р№') {
-    alert( 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ!' );
+  if (pass === 'Я главный') {
+    alert( 'Здравствуйте!' );
   } else if (pass === '' || pass === null) {
-    alert( 'РћС‚РјРµРЅРµРЅРѕ' );
+    alert( 'Отменено' );
   } else {
-    alert( 'РќРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ' );
+    alert( 'Неверный пароль' );
   }
 
 } else if (userName === '' || userName === null) {
-  alert( 'РћС‚РјРµРЅРµРЅРѕ' );
+  alert( 'Отменено' );
 } else {
-  alert( "РЇ РІР°СЃ РЅРµ Р·РЅР°СЋ" );
+  alert( "Я вас не знаю" );
 }
 
 
 
-let height = +prompt('Р’Р°С€ СЂР°Р·РјРµСЂ?','');
+let height = +prompt('Ваш размер?','');
 while (height == NaN){
-  height = prompt('РµС‰Рµ СЂР°Р·','');  
+  height = prompt('еще раз','');  
 }
-console.log(`Р Р°Р·РјРµСЂ РІР°С€РµР№ РЅРѕРіРё ${height ?? 23}`)
+console.log(`Размер вашей ноги ${height ?? 23}`)
 
-let age = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', '');
+let age = +prompt('Угадайте число', '');
 
 while(age != 18){
- alert("РќРµРІРµСЂРЅРѕ")   
- age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
+ alert("Неверно")   
+ age = prompt('Угадайте еще раз число', '');
  if(age == null){
-    alert("РћС…СѓРµР» Р¶Р°С‚СЊ РѕС‚РјРµРЅР°!")   
-    age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
+    alert("Охуел жать отмена!")   
+    age = prompt('Угадайте еще раз число', '');
  }
 }
 
-alert('РЈРіР°РґР°Р»Рё');
-document.write('РЈР РђРђРђРђРђРђРђРђРђ')
+alert('Угадали');
+document.write('УРААААААААА')
 
 
 do{
- alert("РќРµРІРµСЂРЅРѕ");   
-age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
+ alert("Неверно");   
+age = prompt('Угадайте еще раз число', '');
 }while (age != 18);
 
 
 let age;
 
-for(age = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', ''); age != 18;){
+for(age = +prompt('Угадайте число', ''); age != 18;){
 
 if (age == null || age == '') {
     break;   
 } 
 
 if(age == 19) {
-alert('РїРѕС‡С‚Рё СѓРіР°РґР°Р»Рё');
+alert('почти угадали');
 } 
 
-age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
+age = prompt('Угадайте еще раз число', '');
 
 }
 
-(age == null || age == '') ? alert('РџРѕРїСЂРѕР±СѓР№С‚Рµ РІ СЃР» СЂР°Р·') : alert(`РЈРіР°РґР°Р»Рё ${age}`);
+(age == null || age == '') ? alert('Попробуйте в сл раз') : alert(`Угадали ${age}`);
 
 
-let number = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', '');;
+let number = +prompt('Угадайте число', '');;
 
 
 switch (number) {
@@ -270,7 +373,7 @@ switch (number) {
 }
 
 
-let browser = prompt('РєР°РєРѕР№ Р±СЂР°СѓР·РµСЂ?',"");
+let browser = prompt('какой браузер?',"");
 
 if (browser == "Edge"){
   alert( "You've got the Edge!" );  
@@ -285,31 +388,60 @@ if (browser == "Edge"){
 
 
 
-const number = +prompt('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РјРµР¶РґСѓ 0 Рё 3', '');
+const number = +prompt('Введите число между 0 и 3', '');
 
 switch (number) {
     case 0:
-       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 0');
+       alert('Вы ввели число 0');
     break;
     case 1:
-       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 1');
+       alert('Вы ввели число 1');
     break;
       case 2:
       case 3:
-       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 2, Р° РјРѕР¶РµС‚ Рё 3');
+       alert('Вы ввели число 2, а может и 3');
     break;
 }
 */
 
-//Р¤СѓРЅРєС†РёРё
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Функции
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 function showMessage(name, age) {
 name = prompt('Name?', '');
 age = prompt('Name?', '');
 if(name == null || age == null){
-   name = 'РќРµРёР·РІРµСЃС‚РЅС‹Р№';
-   age = 'РҐР—';
+   name = 'Неизвестный';
+   age = 'ХЗ';
 }
   alert(name + ": " + age);
 }
@@ -332,11 +464,11 @@ function checkAge(age) {
   if (age >= 18) {
     return alert('Welcome');
   } else {
-    return confirm('Р РѕРґРёС‚РµР»Рё СЂР°Р·СЂРµС€РёР»Рё?');
+    return confirm('Родители разрешили?');
   }
 }
 
- let  age = +prompt('Р’Р°РјРё РµСЃС‚СЊ 18?','18');
+ let  age = +prompt('Вами есть 18?','18');
 
 checkAge(age);
 
@@ -361,13 +493,13 @@ function ask(question, yes, no) {
   else no();
 }
 function showOk() {
-  alert( "Р’С‹ СЃРѕРіР»Р°СЃРЅС‹." );
+  alert( "Вы согласны." );
 }
 function showCancel() {
-  alert( "Р’С‹ РѕС‚РјРµРЅРёР»Рё РІС‹РїРѕР»РЅРµРЅРёРµ." );
+  alert( "Вы отменили выполнение." );
 }
 
-ask("Р’С‹ СЃРѕРіР»Р°СЃРЅС‹?", showOk, showCancel);
+ask("Вы согласны?", showOk, showCancel);
 
 
 let sum = (a, b) => a * b;
@@ -399,7 +531,40 @@ console.log(parseInt(test));
 console.log(parseFloat(test));
 */
 
-// РћР±РµРєС‚С‹
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Обекты
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 let options = {
@@ -435,11 +600,11 @@ let counter = 0;
 for (let key in options){
     if (typeof(options[key]) == 'object') {
         for (let i in options[key]){
-            console.log(`РЎРІРѕР№СЃС‚РІРѕ ${i} РёРјРµС‚ Р·РЅР°С‡РµРЅРёРµ ${options[key] [i]}`);
+            console.log(`Свойство ${i} имет значение ${options[key] [i]}`);
         counter++;
         }  
     } else {
-            console.log(`РЎРІРѕР№СЃС‚РІРѕ ${key} РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ: ${options[key]}`);
+            console.log(`Свойство ${key} имеет значение: ${options[key]}`);
             counter++;
     }
 }
@@ -449,27 +614,27 @@ console.log(counter);
 
 
 let user = {
-    name: prompt ('Р’Р°С€Рµ РёРјСЏ?',''),
-    age: +prompt ('Р›РµС‚?', ''),
-    famyli: prompt ('Р’С‹ Р¶РµРЅР°С‚С‹?', ''),
-    auto: prompt ('Р•СЃС‚СЊ Р°РІС‚Рѕ?', 'yes'),
-    markauto: confirm ('Р СѓСЃСЃРєРѕРµ Р°РІС‚Рѕ?'),
+    name: prompt ('Ваше имя?',''),
+    age: +prompt ('Лет?', ''),
+    famyli: prompt ('Вы женаты?', ''),
+    auto: prompt ('Есть авто?', 'yes'),
+    markauto: confirm ('Русское авто?'),
     men: '',
     autos: ''
 }
 
 
-user.isBens = +prompt('РЎРєРѕР»СЊРєРѕ РІС‹ С‚СЂР°С‚РёС‚РёРµ РЅР° Р±РµРЅР·РёРЅ?','');
+user.isBens = +prompt('Сколько вы тратитие на бензин?','');
 
 if (user.auto == "yes" && user.markauto == true){
-    user.autos = 'Р СѓСЃСЃРєРѕРµ РђР’РўРћ';
-    user.men = 'Р§РµС‚РєРёР№ РїР°С†Р°РЅ';
+    user.autos = 'Русское АВТО';
+    user.men = 'Четкий пацан';
 }else if (user.auto == "yes" && user.markauto == false){
-    user.autos = 'IN РђР’РўРћ';
+    user.autos = 'IN АВТО';
     user.men = 'MAjor';
 } else {
-user.autos = 'Р‘РµР· Р°РІС‚Рѕ';
-user.men = 'РџРµС€РµС…РѕРґ';  
+user.autos = 'Без авто';
+user.men = 'Пешеход';  
 }
 
 delete user.markauto;
@@ -480,7 +645,36 @@ for (let key in user){
 };
 */
 
-// РњРµС‚РѕРґС‹ РѕР±СЉРµРєС‚РѕРІ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Методы объектов
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 function copy(oneMan) {
@@ -493,7 +687,7 @@ function copy(oneMan) {
     return obgCopy;
 }
 
-// РљР»РѕРЅРёСЂРІР°РЅРёРµ РѕР±СЉРµРєС‚Р°
+// Клонирвание объекта
 
 const woomen = {
     name: 'Marina',
@@ -564,22 +758,22 @@ console.log(newBmw);
 
 
 const auto = {
-	mark: prompt('РњР°СЂРєР° Р°РІС‚Рѕ?', 'РҐР— РєР°РєР°СЏ') ?? 'РҐР— РєР°РєР°СЏ',
-	price: prompt('Р¦РµРЅР° РІР°С€РµРіРѕ РІРµРґСЂР°?', 'РћРЅРѕ Р±РµСЃС†РµРЅРЅРѕ') ?? 'РћРЅРѕ Р±РµСЃС†РµРЅРЅРѕ',
+	mark: prompt('Марка авто?', 'ХЗ какая') ?? 'ХЗ какая',
+	price: prompt('Цена вашего ведра?', 'Оно бесценно') ?? 'Оно бесценно',
 	itsAuto: function () {
 		console.log(
-			`Best vedro: ${auto.mark}, С†РІРµС‚Р° ${auto.color}, po chene: ${auto.price}`
+			`Best vedro: ${auto.mark}, цвета ${auto.color}, po chene: ${auto.price}`
 		);
 	},
 };
 
-auto.color = prompt('Р¦РІРµС‚ Р°РІС‚Рѕ?', '') ?? 'РҐР— РєР°РєР°СЏ';
+auto.color = prompt('Цвет авто?', '') ?? 'ХЗ какая';
 
 const auto2 = Object.create(auto);
 
-auto.mark = prompt('РњР°СЂРєР° Р°РІС‚Рѕ?');
+auto.mark = prompt('Марка авто?');
 if(auto.mark == null || auto.mark == ""){
- auto.mark ='РҐР— РєР°РєР°СЏ';    
+ auto.mark ='ХЗ какая';    
 };
 
 const auto2 = Object.create(auto);
@@ -594,8 +788,33 @@ console.log(auto);
 auto2.itsAuto();
 */
 
-//РњР°СЃСЃРёРІС‹
 
+
+
+
+
+
+
+
+
+
+
+
+
+//Массивы
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const arr = [12, 23, 31, 5, 1, 10];
 arr.sort(numSort);
 console.log(arr);
@@ -610,7 +829,7 @@ arr.pop();
 arr.push(12);
 
 arr.forEach(function (item, i, arr) {
-	console.log(`Р­Р»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° ${item} РёРґРµС‚ РїРѕ РїРѕСЂСЏРґРєСѓ ${i} РІ РјР°СЃСЃРёРІРµ ${arr}`);
+	console.log(`Элемент массива ${item} идет по порядку ${i} в массиве ${arr}`);
 });
 
 for (let i = 0; i < arr.length; i++) {
@@ -633,25 +852,25 @@ document.write(whois.join('; '));
 
 let men = [];
 
-men[0] = prompt('Р’Р°С€Рµ РёРјСЏ', '');
-men[1] = prompt('Р¤Р°РјРёР»РёСЏ', '');
-men[2] = +prompt('Р’РѕР·СЂР°СЃС‚', '');
+men[0] = prompt('Ваше имя', '');
+men[1] = prompt('Фамилия', '');
+men[2] = +prompt('Возраст', '');
 
 if (men[2] >= 18) {
-	men[2] = `BР°Рј ${men[2]} Р»РµС‚`;
-	alert(`${men[0]}, РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° СЃР°Р№С‚`);
-	men[3] = prompt('Р’РІРµРґРёС‚Рµ РІР°С€ РїР°СЂРѕР»СЊ');
+	men[2] = `Bам ${men[2]} лет`;
+	alert(`${men[0]}, добро пожаловать на сайт`);
+	men[3] = prompt('Введите ваш пароль');
 } else {
-	men[2] = `BР°Рј СЃР»РёС€РєРѕРј РјР°Р»Рѕ Р»РµС‚`;
-	alert(`${men[0]}, СЌС‚РѕС‚ СЃР°Р№С‚ С‚РѕР»СЊРєРѕ РґР»СЏ СЃРѕРІРµСЂС€РµРЅРЅРѕР»РµС‚РЅРёС…`);
+	men[2] = `Bам слишком мало лет`;
+	alert(`${men[0]}, этот сайт только для совершеннолетних`);
 }
 
-alert(men.pop()); // СѓРґР°Р»СЏРµРј РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ Рё РІС‹РІРѕРґРёРј РµРіРѕ
-men.shift(); // РјР°СЃСЃРёРІР° РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
+alert(men.pop()); // удаляем последний элемент и выводим его
+men.shift(); // массива первый элемент
 
-men.push(`Р’РѕС‚ С‚Р°Рє, ${men[0]}`); // Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РєРѕРЅРµС† РјР°СЃСЃРёРІР°
+men.push(`Вот так, ${men[0]}`); // Добавляет элемент в конец массива
 
-men.unshift(`РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ #1 РёРјРµРµС‚ СЃРІРѕР№СЃС‚РІР°:`); //Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РЅР°С‡Р°Р»Рѕ РјР°СЃСЃРёРІР°
+men.unshift(`Пользователь #1 имеет свойства:`); //Добавляет элемент в начало массива
 men.join(', ');
 
 console.log(men);
@@ -662,7 +881,7 @@ for (let item of men) {
 	console.log(item);
 }
 
-men.length = 2; // СѓРєРѕСЂР°С‡РёРІР°РµРј РґРѕ РґРІСѓС… СЌР»РµРјРµРЅС‚РѕРІ
+men.length = 2; // укорачиваем до двух элементов
 
 men.forEach(function (a, b, c) {
 	console.log(`${a}: ${b}`);
@@ -671,3 +890,47 @@ men.forEach(function (a, b, c) {
 for (let i = 0; i < men.length; i++) {
 	alert(men[i]);
 }
+*/
+
+
+
+
+
+
+
+// Динамическая типизация данных
+
+
+
+
+
+
+
+
+/*
+console.log (typeof(String(4)));
+console.log(typeof(4 + 'rrr'));
+const num = 5;
+console.log('https://site/catalog/' + num);
+
+const fontsize = 26 +'px';
+
+console.log(typeof(Number('4')));
+
+
+let summ = null;
+if (summ) {
+  console.log('LAVEEE')
+};
+
+summ = 1;
+if (summ) {
+  console.log('LAVEEE')
+};
+
+
+console.log(typeof Boolean('4'));
+console.log(typeof(!!'4'));
+*/
+
+
