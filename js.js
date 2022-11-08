@@ -1,6 +1,9 @@
 'use strict';
 
-/*let number = 4.6;
+// переменные, интерполяция данных
+
+/*
+let number = 4.6;
 let name = 'alex';
 
 
@@ -28,20 +31,23 @@ console.log(result)
 
 const answer = prompt('Через сколько дней у тебя ДР?', 'ХЗ');
 console.log(answer);
-console.log(typeof(answer));*/
+console.log(typeof(answer));
 
-/*alert(full)*/
+alert(full);*/
 
-/*const answers = [];
+// общзение с пользователем
+
+/*
+const answers = [];
 
 answers[0] = prompt('Как ваше имя?', '');
 answers[1] = prompt('Как ваше фамилия?', '');
 answers[2] = prompt('Сколько лет?', '');
 
 document.write(answers[2]);
-console.log(answers);*/
+console.log(answers);
 
-/*const category = 'toys';
+const category = 'toys';
 
 console.log('https://uuu.com/' + category + '/' + '5');
 
@@ -52,7 +58,12 @@ const user = 'user';
 alert(`Привет, ${user}`);
 */
 
-/*console.log('arr' + + 5 + 'two');
+// Инкремент/декремент
+// Операторы сравнения
+//Одной из наиболее частых числовых операций является увеличение или уменьшение на единицу.
+
+/*
+console.log('arr' + + 5 + 'two');
 
 
 let incr = 10,
@@ -80,19 +91,23 @@ const istCheked = true,
        isClose = true;
 
        console.log(istCheked && isClose)
-       console.log(istCheked || !isClose)*/
+       console.log(istCheked || !isClose)
+*/
 
-/*let question =  prompt('Как вас зовут?')
+// Условия
+
+/*
+let question =  prompt('Как вас зовут?')
 if(question === null || question === ""){
     document.write('Привет незнакомец')
  } else {
 document.write('Привет ' + question)
 };
-*/
 
-/*const num = +prompt('Сколько вам лет?', '');*/
 
-/*if (num === null || num === "") {
+const num = +prompt('Сколько вам лет?', '');
+
+if (num === null || num === "") {
     document.write(', напиши ответ мля')
 } else if (num >= 18) {   
 document.write(', заходи');
@@ -101,9 +116,9 @@ document.write(' ,прочь, молокосос');
 }
 else {
     document.write(', напиши ответ мля');
-}*/
+}
 
-/*(num === 50) ? document.write('ок') : document.write('error');
+(num === 50) ? document.write('ок') : document.write('error');
 
 
 switch (num) {
@@ -116,9 +131,13 @@ switch (num) {
     default: 
         document.write('fuck');
         break;
-}*/
+}
+*/
 
-/*let num = 50;
+// Циклы
+
+/*
+let num = 50;
 
 while (num < 55) {
     console.log(num);
@@ -131,9 +150,9 @@ do {
     num++; 
 }
 while (num < 65); 
-*/
 
-/*for (let i = 1; i < 12; i++) {
+
+for (let i = 1; i < 12; i++) {
 
      if (i == 5){
         break;
@@ -144,13 +163,12 @@ while (num < 65);
     console.log(i);
 }
 
-*/
 
-/*let srt = 1244241;
+let srt = 1244241;
 let num = Number(srt);
-let str2 = String(num);*/
+let str2 = String(num);
 
-/*let result = confirm ('Вам действительно сегогдня ДР?');
+let result = confirm ('Вам действительно сегогдня ДР?');
 let name = prompt('Ваше имя?', '');
 
 
@@ -166,9 +184,9 @@ if (name != null && result != false) {
 }else{
  alert(`Незнакомец, Будем вас поздравлять через хуй знает сколько дней`);   
 };
-*/
 
-/*let userName = prompt("Кто там?", '');
+
+let userName = prompt("Кто там?", '');
 
 if (userName === 'Админ') {
 
@@ -187,17 +205,18 @@ if (userName === 'Админ') {
 } else {
   alert( "Я вас не знаю" );
 }
-*/
 
-/*let height = +prompt('Ваш размер?','');
+
+
+let height = +prompt('Ваш размер?','');
 while (height == NaN){
   height = prompt('еще раз','');  
 }
-console.log(`Размер вашей ноги ${height ?? 23}`)*/
+console.log(`Размер вашей ноги ${height ?? 23}`)
 
-/*let age = +prompt('Угадайте число', '');*/
+let age = +prompt('Угадайте число', '');
 
-/*while(age != 18){
+while(age != 18){
  alert("Неверно")   
  age = prompt('Угадайте еще раз число', '');
  if(age == null){
@@ -208,15 +227,15 @@ console.log(`Размер вашей ноги ${height ?? 23}`)*/
 
 alert('Угадали');
 document.write('УРААААААААА')
-*/
 
-/*do{
+
+do{
  alert("Неверно");   
 age = prompt('Угадайте еще раз число', '');
 }while (age != 18);
-*/
 
-/*let age;
+
+let age;
 
 for(age = +prompt('Угадайте число', ''); age != 18;){
 
@@ -233,9 +252,9 @@ age = prompt('Угадайте еще раз число', '');
 }
 
 (age == null || age == '') ? alert('Попробуйте в сл раз') : alert(`Угадали ${age}`);
-*/
 
-/*let number = +prompt('Угадайте число', '');;
+
+let number = +prompt('Угадайте число', '');;
 
 
 switch (number) {
@@ -249,9 +268,9 @@ switch (number) {
        console.log('UPSSSS')
         break;
 }
-*/
 
-/*let browser = prompt('какой браузер?',"");
+
+let browser = prompt('какой браузер?',"");
 
 if (browser == "Edge"){
   alert( "You've got the Edge!" );  
@@ -263,9 +282,10 @@ if (browser == "Edge"){
 } else{
   alert( 'We hope that this page looks ok!' );
 }
-*/
 
-/*const number = +prompt('Введите число между 0 и 3', '');
+
+
+const number = +prompt('Введите число между 0 и 3', '');
 
 switch (number) {
     case 0:
@@ -278,9 +298,13 @@ switch (number) {
       case 3:
        alert('Вы ввели число 2, а может и 3');
     break;
-}*/
+}
+*/
 
-/*function showMessage(name, age) {
+//Функции
+
+/*
+function showMessage(name, age) {
 name = prompt('Name?', '');
 age = prompt('Name?', '');
 if(name == null || age == null){
@@ -290,9 +314,9 @@ if(name == null || age == null){
   alert(name + ": " + age);
 }
 
-showMessage(); */
+showMessage(); 
 
-/*function sum(a, b) {
+function sum(a, b) {
   return a + b;
 }
 
@@ -301,9 +325,9 @@ let name = +prompt('Name?', ''),
 
 let result = sum(name, twoName);
 alert(result); 
-*/
 
-/*function checkAge(age) {
+
+function checkAge(age) {
 
   if (age >= 18) {
     return alert('Welcome');
@@ -314,9 +338,9 @@ alert(result);
 
  let  age = +prompt('Вами есть 18?','18');
 
-checkAge(age);*/
+checkAge(age);
 
-/*function min(a ,b) {
+function min(a ,b) {
   
     if(a < b){
      return (a);    
@@ -330,9 +354,9 @@ console.log(min(1, 4))
 function pow(x,n) {
 
   return (x * n)  
-}*/
+}
 
-/*function ask(question, yes, no) {
+function ask(question, yes, no) {
   if (confirm(question)) yes()
   else no();
 }
@@ -343,17 +367,17 @@ function showCancel() {
   alert( "Вы отменили выполнение." );
 }
 
-ask("Вы согласны?", showOk, showCancel);*/
+ask("Вы согласны?", showOk, showCancel);
 
-/*
+
 let sum = (a, b) => a * b;
 
 console.log( sum (3, 10));
 
 
-let ask = (question, yes, no) => */
+let ask = (question, yes, no) => 
 
-/*let name = 'ivAn name:';
+let name = 'ivAn name:';
 
 console.log(name.length);
 console.log(name.toUpperCase());
@@ -365,16 +389,20 @@ console.log(name.subst(5, 5));
 
 let nameBig = `BIG ${name.toUpperCase()}`;
 
-console.log(nameBig);*/
+console.log(nameBig);
 
-/*let num = 12.3;
+let num = 12.3;
 let test = "12.3px";
 
 console.log(Math.round(num));
 console.log(parseInt(test));
-console.log(parseFloat(test));*/
+console.log(parseFloat(test));
+*/
 
-/*let options = {
+// Обекты
+
+/*
+let options = {
     name: 'test',
     width: 1024,
     height: 768,
@@ -417,9 +445,9 @@ for (let key in options){
 }
 
 console.log(counter);
-*/
 
-/*
+
+
 let user = {
     name: prompt ('Ваше имя?',''),
     age: +prompt ('Лет?', ''),
@@ -429,7 +457,6 @@ let user = {
     men: '',
     autos: ''
 }
-
 
 
 user.isBens = +prompt('Сколько вы тратитие на бензин?','');
@@ -451,90 +478,12 @@ delete user.markauto;
 for (let key in user){
     console.log(`${key} : ${user[key]}`);
 };
-
 */
 
-/*const arr = [12, 23, 31, 5, 1, 10];
-arr.sort(numSort);
-console.log(arr);
+// Методы объектов
 
-function numSort(a, b){
-    return a - b;
-}
-*/
-
-/*arr[6] = 26;
-console.log(arr.length);
-arr.pop();
-arr.push(12);*/
-
-/*arr.forEach(function(item, i, arr) {
-  console.log(`Элемент массива ${item} идет по порядку ${i} в массиве ${arr}`);
-});
-*/
-
-/*for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
-
-for (let item of arr) {
-    console.log(item);
-}
-
-for (let item in arr) {
-    console.log(arr[item]);
-}
-*/
-
-/*const woomen = prompt('', '');
-const whois = woomen.split(', ');
-whois.sort();
-console.log(whois);
-document.write(whois.join('; '));*/
-
-/*let men = [];
-
-men[0] = prompt('Ваше имя', '');
-men[1] = prompt('Фамилия', '');
-men[2] = +prompt('Возраст', '');
-
-if(men[2] >= 18){
- men[2] = `Bам ${men[2]} лет`;
- alert(`${men[0]}, добро пожаловать на сайт`);
- men[3] = prompt('Введите ваш пароль');
-}else {
-  men[2] = `Bам слишком мало лет`;
-  alert(`${men[0]}, этот сайт только для совершеннолетних`);
-};
-
-alert(men.pop()); // удаляем последний элемент и выводим его
-men.shift(); // массива первый элемент 
-
-men.push(`Вот так, ${men[0]}`); // Добавляет элемент в конец массива
-
-men.unshift(`Пользователь #1 имеет свойства:`); //Добавляет элемент в начало массива
-men.join(', ');
-
-console.log(men);
-
-document.write(men);*/
-
-/*for (let item of men){
-  console.log(item);
-}
-
-men.length = 2; // укорачиваем до двух элементов
-
-men.forEach(function(a, b, c){
-    console.log(`${a}: ${b}`)
-});
-*/
-
-/*for (let i =0; i < men.length; i++){
-    alert(men[i]);
-}*/
-
-/*function copy(oneMan) {
+/*
+function copy(oneMan) {
     let obgCopy = {};
     let key;
     for (key in oneMan) {
@@ -543,10 +492,10 @@ men.forEach(function(a, b, c){
 
     return obgCopy;
 }
-*/
+
 // Клонирвание объекта
 
-/*const woomen = {
+const woomen = {
     name: 'Marina',
     age: 53,
     hair: {
@@ -573,9 +522,9 @@ let woomenTwo = copy(woomen);
     woomenTwo.hair.color = 'black';
 
     console.log(woomenTwo);
-    console.log(woomen);*/
+    console.log(woomen);
 
-/*
+
 let auto = ['bmw', '200ls', '20000$'];
 
 let newAuto = auto.slice();
@@ -612,7 +561,7 @@ const bmw = {
 const newBmw = {...bmw};
 
 console.log(newBmw);
-*/
+
 
 const auto = {
 	mark: prompt('Марка авто?', 'ХЗ какая') ?? 'ХЗ какая',
@@ -626,20 +575,99 @@ const auto = {
 
 auto.color = prompt('Цвет авто?', '') ?? 'ХЗ какая';
 
-/*const auto2 = Object.create(auto);*/
+const auto2 = Object.create(auto);
 
-/*auto.mark = prompt('Марка авто?');
+auto.mark = prompt('Марка авто?');
 if(auto.mark == null || auto.mark == ""){
  auto.mark ='ХЗ какая';    
-};*/
+};
 
-/*const auto2 = Object.create(auto);*/
+const auto2 = Object.create(auto);
 
-/*Object.setPrototypeOf(auto2, auto);*/
+Object.setPrototypeOf(auto2, auto);
 
 console.log();
 auto.itsAuto();
 
 console.log(auto);
 
-/*auto2.itsAuto();*/
+auto2.itsAuto();
+*/
+
+//Массивы
+
+const arr = [12, 23, 31, 5, 1, 10];
+arr.sort(numSort);
+console.log(arr);
+
+function numSort(a, b) {
+	return a - b;
+}
+
+arr[6] = 26;
+console.log(arr.length);
+arr.pop();
+arr.push(12);
+
+arr.forEach(function (item, i, arr) {
+	console.log(`Элемент массива ${item} идет по порядку ${i} в массиве ${arr}`);
+});
+
+for (let i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
+}
+
+for (let item of arr) {
+	console.log(item);
+}
+
+for (let item in arr) {
+	console.log(arr[item]);
+}
+
+const woomen = prompt('', '');
+const whois = woomen.split(', ');
+whois.sort();
+console.log(whois);
+document.write(whois.join('; '));
+
+let men = [];
+
+men[0] = prompt('Ваше имя', '');
+men[1] = prompt('Фамилия', '');
+men[2] = +prompt('Возраст', '');
+
+if (men[2] >= 18) {
+	men[2] = `Bам ${men[2]} лет`;
+	alert(`${men[0]}, добро пожаловать на сайт`);
+	men[3] = prompt('Введите ваш пароль');
+} else {
+	men[2] = `Bам слишком мало лет`;
+	alert(`${men[0]}, этот сайт только для совершеннолетних`);
+}
+
+alert(men.pop()); // удаляем последний элемент и выводим его
+men.shift(); // массива первый элемент
+
+men.push(`Вот так, ${men[0]}`); // Добавляет элемент в конец массива
+
+men.unshift(`Пользователь #1 имеет свойства:`); //Добавляет элемент в начало массива
+men.join(', ');
+
+console.log(men);
+
+document.write(men);
+
+for (let item of men) {
+	console.log(item);
+}
+
+men.length = 2; // укорачиваем до двух элементов
+
+men.forEach(function (a, b, c) {
+	console.log(`${a}: ${b}`);
+});
+
+for (let i = 0; i < men.length; i++) {
+	alert(men[i]);
+}
