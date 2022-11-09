@@ -934,3 +934,94 @@ console.log(typeof(!!'4'));
 */
 
 
+
+
+
+
+
+
+
+
+//Получение элементов со страницы
+
+
+
+
+
+
+
+
+
+// console.log(document.head);
+// console.log(document.childElementCount);
+// console.log(document.body.childNodes);
+// console.log(document.body.firstChild);
+// console.log(document.body.lastChild);
+
+// console.log(document.body.firstElementChild);
+
+// console.log(document.querySelector('#current').parentNode);
+
+// console.log(document.querySelector('#current').parentElement);
+
+// console.log(document.querySelector('#current').parentNode.parentNode);
+
+// console.log(document.querySelector('[data-current="3"]').nextSibling);
+
+// console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+
+// console.log(document.querySelector('[data-current="3"]').previousSibling);
+
+// for (let node of document.body.childNodes) {
+//     if (node.nodeName == '#text'){
+//     continue;
+// };
+
+//   console.log(node);
+// };
+
+
+
+
+
+
+
+
+
+
+
+// Получение элементов со страницы
+
+
+
+
+
+
+
+
+
+const box = document.getElementById('box');
+            
+const buttons = document.getElementsByTagName('button');
+const button = document.getElementsByTagName('button')[1];
+
+console.log(button);
+console.log(buttons[3]);
+
+
+const circles = document.getElementsByClassName('circle');// выводит объект
+console.log(circles);
+console.log(circles[2])
+
+const hearts = document.querySelectorAll('.heart'); // выводит массив
+
+hearts.forEach(item => {
+console.log(item);
+});
+
+// console.log(hearts);
+
+const oneHeart = document.querySelector('.heart'); // выводит первый элемент . который попался в DOM
+
+console.log(oneHeart);
+
