@@ -9,7 +9,11 @@
 
 
 
-// переменные, интерполяция данных
+
+
+// РїРµСЂРµРјРµРЅРЅС‹Рµ, РёРЅС‚РµСЂРїРѕР»СЏС†РёСЏ РґР°РЅРЅС‹С…
+
+
 
 
 
@@ -23,10 +27,10 @@ let number = 4.6;
 let name = 'alex';
 
 
-console.log(name + 'мне' + number + 'лет')
+console.log(name + 'РјРЅРµ' + number + 'Р»РµС‚')
 console.log(number + 10)
 
-let full = 'Илья' + 37 + 'лет';
+let full = 'РР»СЊСЏ' + 37 + 'Р»РµС‚';
 
 const obj ={
     name: 'ivan',
@@ -42,23 +46,23 @@ console.log(obj.name);
 console.log(['clichka']);
 
 
-const result = confirm('сколько вам лет?')
+const result = confirm('СЃРєРѕР»СЊРєРѕ РІР°Рј Р»РµС‚?')
 console.log(result)
 
-const answer = prompt('Через сколько дней у тебя ДР?', 'ХЗ');
+const answer = prompt('Р§РµСЂРµР· СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Сѓ С‚РµР±СЏ Р”Р ?', 'РҐР—');
 console.log(answer);
 console.log(typeof(answer));
 
 alert(full);*/
 
-// общзение с пользователем
+// РѕР±С‰Р·РµРЅРёРµ СЃ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 
 /*
 const answers = [];
 
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Как ваше фамилия?', '');
-answers[2] = prompt('Сколько лет?', '');
+answers[0] = prompt('РљР°Рє РІР°С€Рµ РёРјСЏ?', '');
+answers[1] = prompt('РљР°Рє РІР°С€Рµ С„Р°РјРёР»РёСЏ?', '');
+answers[2] = prompt('РЎРєРѕР»СЊРєРѕ Р»РµС‚?', '');
 
 document.write(answers[2]);
 console.log(answers);
@@ -71,7 +75,7 @@ console.log(`https://uuu.com/${category}/55555`);
 
 const user = 'user';
 
-alert(`Привет, ${user}`);
+alert(`РџСЂРёРІРµС‚, ${user}`);
 */
 
 
@@ -87,9 +91,13 @@ alert(`Привет, ${user}`);
 
 
 
-// Инкремент/декремент
-// Операторы сравнения
-//Одной из наиболее частых числовых операций является увеличение или уменьшение на единицу.
+
+// РРЅРєСЂРµРјРµРЅС‚/РґРµРєСЂРµРјРµРЅС‚
+// РћРїРµСЂР°С‚РѕСЂС‹ СЃСЂР°РІРЅРµРЅРёСЏ
+//РћРґРЅРѕР№ РёР· РЅР°РёР±РѕР»РµРµ С‡Р°СЃС‚С‹С… С‡РёСЃР»РѕРІС‹С… РѕРїРµСЂР°С†РёР№ СЏРІР»СЏРµС‚СЃСЏ СѓРІРµР»РёС‡РµРЅРёРµ РёР»Рё СѓРјРµРЅСЊС€РµРЅРёРµ РЅР° РµРґРёРЅРёС†Сѓ.
+
+
+
 
 
 
@@ -152,7 +160,11 @@ const istCheked = true,
 
 
 
-// Условия
+
+// РЈСЃР»РѕРІРёСЏ
+
+
+
 
 
 
@@ -170,28 +182,28 @@ const istCheked = true,
 
 
 /*
-let question =  prompt('Как вас зовут?')
+let question =  prompt('РљР°Рє РІР°СЃ Р·РѕРІСѓС‚?')
 if(question === null || question === ""){
-    document.write('Привет незнакомец')
+    document.write('РџСЂРёРІРµС‚ РЅРµР·РЅР°РєРѕРјРµС†')
  } else {
-document.write('Привет ' + question)
+document.write('РџСЂРёРІРµС‚ ' + question)
 };
 
 
-const num = +prompt('Сколько вам лет?', '');
+const num = +prompt('РЎРєРѕР»СЊРєРѕ РІР°Рј Р»РµС‚?', '');
 
 if (num === null || num === "") {
-    document.write(', напиши ответ мля')
+    document.write(', РЅР°РїРёС€Рё РѕС‚РІРµС‚ РјР»СЏ')
 } else if (num >= 18) {   
-document.write(', заходи');
+document.write(', Р·Р°С…РѕРґРё');
 } else if (num < 18 || num > 0){
-document.write(' ,прочь, молокосос');
+document.write(' ,РїСЂРѕС‡СЊ, РјРѕР»РѕРєРѕСЃРѕСЃ');
 }
 else {
-    document.write(', напиши ответ мля');
+    document.write(', РЅР°РїРёС€Рё РѕС‚РІРµС‚ РјР»СЏ');
 }
 
-(num === 50) ? document.write('ок') : document.write('error');
+(num === 50) ? document.write('РѕРє') : document.write('error');
 
 
 switch (num) {
@@ -199,7 +211,7 @@ switch (num) {
          document.write('error');
         break;
     case 50:
-        document.write('ок');
+        document.write('РѕРє');
         break;
     default: 
         document.write('fuck');
@@ -221,7 +233,10 @@ switch (num) {
 
 
 
-// Циклы
+
+
+// Р¦РёРєР»С‹
+
 
 
 
@@ -271,93 +286,93 @@ let srt = 1244241;
 let num = Number(srt);
 let str2 = String(num);
 
-let result = confirm ('Вам действительно сегогдня ДР?');
-let name = prompt('Ваше имя?', '');
+let result = confirm ('Р’Р°Рј РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµРіРѕРіРґРЅСЏ Р”Р ?');
+let name = prompt('Р’Р°С€Рµ РёРјСЏ?', '');
 
 
-(name == 'Илья') ? console.log('Эй парень!') :  console.log('Это не Илья');
-(name == 'Илья') ? document.write('Илюха, это снова ты') : console.log('Э');
+(name == 'РР»СЊСЏ') ? console.log('Р­Р№ РїР°СЂРµРЅСЊ!') :  console.log('Р­С‚Рѕ РЅРµ РР»СЊСЏ');
+(name == 'РР»СЊСЏ') ? document.write('РР»СЋС…Р°, СЌС‚Рѕ СЃРЅРѕРІР° С‚С‹') : console.log('Р­');
 
  console.log();
 
 if (name != null && result != false) {
- let number = +prompt('Через сколько дней у вас ДР?', '')
- console.log(`Поздравляем, вас с днем Рождения, ${name}`);
- console.log(`${name}, Будем вас поздравлять через ${number} дней`);
+ let number = +prompt('Р§РµСЂРµР· СЃРєРѕР»СЊРєРѕ РґРЅРµР№ Сѓ РІР°СЃ Р”Р ?', '')
+ console.log(`РџРѕР·РґСЂР°РІР»СЏРµРј, РІР°СЃ СЃ РґРЅРµРј Р РѕР¶РґРµРЅРёСЏ, ${name}`);
+ console.log(`${name}, Р‘СѓРґРµРј РІР°СЃ РїРѕР·РґСЂР°РІР»СЏС‚СЊ С‡РµСЂРµР· ${number} РґРЅРµР№`);
 }else{
- alert(`Незнакомец, Будем вас поздравлять через хуй знает сколько дней`);   
+ alert(`РќРµР·РЅР°РєРѕРјРµС†, Р‘СѓРґРµРј РІР°СЃ РїРѕР·РґСЂР°РІР»СЏС‚СЊ С‡РµСЂРµР· С…СѓР№ Р·РЅР°РµС‚ СЃРєРѕР»СЊРєРѕ РґРЅРµР№`);   
 };
 
 
-let userName = prompt("Кто там?", '');
+let userName = prompt("РљС‚Рѕ С‚Р°Рј?", '');
 
-if (userName === 'Админ') {
+if (userName === 'РђРґРјРёРЅ') {
 
-  let pass = prompt('Пароль?', '');
+  let pass = prompt('РџР°СЂРѕР»СЊ?', '');
 
-  if (pass === 'Я главный') {
-    alert( 'Здравствуйте!' );
+  if (pass === 'РЇ РіР»Р°РІРЅС‹Р№') {
+    alert( 'Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ!' );
   } else if (pass === '' || pass === null) {
-    alert( 'Отменено' );
+    alert( 'РћС‚РјРµРЅРµРЅРѕ' );
   } else {
-    alert( 'Неверный пароль' );
+    alert( 'РќРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ' );
   }
 
 } else if (userName === '' || userName === null) {
-  alert( 'Отменено' );
+  alert( 'РћС‚РјРµРЅРµРЅРѕ' );
 } else {
-  alert( "Я вас не знаю" );
+  alert( "РЇ РІР°СЃ РЅРµ Р·РЅР°СЋ" );
 }
 
 
 
-let height = +prompt('Ваш размер?','');
+let height = +prompt('Р’Р°С€ СЂР°Р·РјРµСЂ?','');
 while (height == NaN){
-  height = prompt('еще раз','');  
+  height = prompt('РµС‰Рµ СЂР°Р·','');  
 }
-console.log(`Размер вашей ноги ${height ?? 23}`)
+console.log(`Р Р°Р·РјРµСЂ РІР°С€РµР№ РЅРѕРіРё ${height ?? 23}`)
 
-let age = +prompt('Угадайте число', '');
+let age = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', '');
 
 while(age != 18){
- alert("Неверно")   
- age = prompt('Угадайте еще раз число', '');
+ alert("РќРµРІРµСЂРЅРѕ")   
+ age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
  if(age == null){
-    alert("Охуел жать отмена!")   
-    age = prompt('Угадайте еще раз число', '');
+    alert("РћС…СѓРµР» Р¶Р°С‚СЊ РѕС‚РјРµРЅР°!")   
+    age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
  }
 }
 
-alert('Угадали');
-document.write('УРААААААААА')
+alert('РЈРіР°РґР°Р»Рё');
+document.write('РЈР РђРђРђРђРђРђРђРђРђ')
 
 
 do{
- alert("Неверно");   
-age = prompt('Угадайте еще раз число', '');
+ alert("РќРµРІРµСЂРЅРѕ");   
+age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
 }while (age != 18);
 
 
 let age;
 
-for(age = +prompt('Угадайте число', ''); age != 18;){
+for(age = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', ''); age != 18;){
 
 if (age == null || age == '') {
     break;   
 } 
 
 if(age == 19) {
-alert('почти угадали');
+alert('РїРѕС‡С‚Рё СѓРіР°РґР°Р»Рё');
 } 
 
-age = prompt('Угадайте еще раз число', '');
+age = prompt('РЈРіР°РґР°Р№С‚Рµ РµС‰Рµ СЂР°Р· С‡РёСЃР»Рѕ', '');
 
 }
 
-(age == null || age == '') ? alert('Попробуйте в сл раз') : alert(`Угадали ${age}`);
+(age == null || age == '') ? alert('РџРѕРїСЂРѕР±СѓР№С‚Рµ РІ СЃР» СЂР°Р·') : alert(`РЈРіР°РґР°Р»Рё ${age}`);
 
 
-let number = +prompt('Угадайте число', '');;
+let number = +prompt('РЈРіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ', '');;
 
 
 switch (number) {
@@ -373,7 +388,7 @@ switch (number) {
 }
 
 
-let browser = prompt('какой браузер?',"");
+let browser = prompt('РєР°РєРѕР№ Р±СЂР°СѓР·РµСЂ?',"");
 
 if (browser == "Edge"){
   alert( "You've got the Edge!" );  
@@ -388,18 +403,18 @@ if (browser == "Edge"){
 
 
 
-const number = +prompt('Введите число между 0 и 3', '');
+const number = +prompt('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РјРµР¶РґСѓ 0 Рё 3', '');
 
 switch (number) {
     case 0:
-       alert('Вы ввели число 0');
+       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 0');
     break;
     case 1:
-       alert('Вы ввели число 1');
+       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 1');
     break;
       case 2:
       case 3:
-       alert('Вы ввели число 2, а может и 3');
+       alert('Р’С‹ РІРІРµР»Рё С‡РёСЃР»Рѕ 2, Р° РјРѕР¶РµС‚ Рё 3');
     break;
 }
 */
@@ -416,11 +431,7 @@ switch (number) {
 
 
 
-
-
-//Функции
-
-
+//Р¤СѓРЅРєС†РёРё
 
 
 
@@ -440,8 +451,8 @@ function showMessage(name, age) {
 name = prompt('Name?', '');
 age = prompt('Name?', '');
 if(name == null || age == null){
-   name = 'Неизвестный';
-   age = 'ХЗ';
+   name = 'РќРµРёР·РІРµСЃС‚РЅС‹Р№';
+   age = 'РҐР—';
 }
   alert(name + ": " + age);
 }
@@ -464,11 +475,11 @@ function checkAge(age) {
   if (age >= 18) {
     return alert('Welcome');
   } else {
-    return confirm('Родители разрешили?');
+    return confirm('Р РѕРґРёС‚РµР»Рё СЂР°Р·СЂРµС€РёР»Рё?');
   }
 }
 
- let  age = +prompt('Вами есть 18?','18');
+ let  age = +prompt('Р’Р°РјРё РµСЃС‚СЊ 18?','18');
 
 checkAge(age);
 
@@ -493,13 +504,13 @@ function ask(question, yes, no) {
   else no();
 }
 function showOk() {
-  alert( "Вы согласны." );
+  alert( "Р’С‹ СЃРѕРіР»Р°СЃРЅС‹." );
 }
 function showCancel() {
-  alert( "Вы отменили выполнение." );
+  alert( "Р’С‹ РѕС‚РјРµРЅРёР»Рё РІС‹РїРѕР»РЅРµРЅРёРµ." );
 }
 
-ask("Вы согласны?", showOk, showCancel);
+ask("Р’С‹ СЃРѕРіР»Р°СЃРЅС‹?", showOk, showCancel);
 
 
 let sum = (a, b) => a * b;
@@ -545,10 +556,7 @@ console.log(parseFloat(test));
 
 
 
-
-
-// Обекты
-
+// РћР±РµРєС‚С‹
 
 
 
@@ -600,11 +608,11 @@ let counter = 0;
 for (let key in options){
     if (typeof(options[key]) == 'object') {
         for (let i in options[key]){
-            console.log(`Свойство ${i} имет значение ${options[key] [i]}`);
+            console.log(`РЎРІРѕР№СЃС‚РІРѕ ${i} РёРјРµС‚ Р·РЅР°С‡РµРЅРёРµ ${options[key] [i]}`);
         counter++;
         }  
     } else {
-            console.log(`Свойство ${key} имеет значение: ${options[key]}`);
+            console.log(`РЎРІРѕР№СЃС‚РІРѕ ${key} РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ: ${options[key]}`);
             counter++;
     }
 }
@@ -614,27 +622,27 @@ console.log(counter);
 
 
 let user = {
-    name: prompt ('Ваше имя?',''),
-    age: +prompt ('Лет?', ''),
-    famyli: prompt ('Вы женаты?', ''),
-    auto: prompt ('Есть авто?', 'yes'),
-    markauto: confirm ('Русское авто?'),
+    name: prompt ('Р’Р°С€Рµ РёРјСЏ?',''),
+    age: +prompt ('Р›РµС‚?', ''),
+    famyli: prompt ('Р’С‹ Р¶РµРЅР°С‚С‹?', ''),
+    auto: prompt ('Р•СЃС‚СЊ Р°РІС‚Рѕ?', 'yes'),
+    markauto: confirm ('Р СѓСЃСЃРєРѕРµ Р°РІС‚Рѕ?'),
     men: '',
     autos: ''
 }
 
 
-user.isBens = +prompt('Сколько вы тратитие на бензин?','');
+user.isBens = +prompt('РЎРєРѕР»СЊРєРѕ РІС‹ С‚СЂР°С‚РёС‚РёРµ РЅР° Р±РµРЅР·РёРЅ?','');
 
 if (user.auto == "yes" && user.markauto == true){
-    user.autos = 'Русское АВТО';
-    user.men = 'Четкий пацан';
+    user.autos = 'Р СѓСЃСЃРєРѕРµ РђР’РўРћ';
+    user.men = 'Р§РµС‚РєРёР№ РїР°С†Р°РЅ';
 }else if (user.auto == "yes" && user.markauto == false){
-    user.autos = 'IN АВТО';
+    user.autos = 'IN РђР’РўРћ';
     user.men = 'MAjor';
 } else {
-user.autos = 'Без авто';
-user.men = 'Пешеход';  
+user.autos = 'Р‘РµР· Р°РІС‚Рѕ';
+user.men = 'РџРµС€РµС…РѕРґ';  
 }
 
 delete user.markauto;
@@ -659,7 +667,14 @@ for (let key in user){
 
 
 
-// Методы объектов
+
+
+
+// РњРµС‚РѕРґС‹ РѕР±СЉРµРєС‚РѕРІ
+
+
+
+
 
 
 
@@ -687,7 +702,7 @@ function copy(oneMan) {
     return obgCopy;
 }
 
-// Клонирвание объекта
+// РљР»РѕРЅРёСЂРІР°РЅРёРµ РѕР±СЉРµРєС‚Р°
 
 const woomen = {
     name: 'Marina',
@@ -758,22 +773,22 @@ console.log(newBmw);
 
 
 const auto = {
-	mark: prompt('Марка авто?', 'ХЗ какая') ?? 'ХЗ какая',
-	price: prompt('Цена вашего ведра?', 'Оно бесценно') ?? 'Оно бесценно',
+	mark: prompt('РњР°СЂРєР° Р°РІС‚Рѕ?', 'РҐР— РєР°РєР°СЏ') ?? 'РҐР— РєР°РєР°СЏ',
+	price: prompt('Р¦РµРЅР° РІР°С€РµРіРѕ РІРµРґСЂР°?', 'РћРЅРѕ Р±РµСЃС†РµРЅРЅРѕ') ?? 'РћРЅРѕ Р±РµСЃС†РµРЅРЅРѕ',
 	itsAuto: function () {
 		console.log(
-			`Best vedro: ${auto.mark}, цвета ${auto.color}, po chene: ${auto.price}`
+			`Best vedro: ${auto.mark}, С†РІРµС‚Р° ${auto.color}, po chene: ${auto.price}`
 		);
 	},
 };
 
-auto.color = prompt('Цвет авто?', '') ?? 'ХЗ какая';
+auto.color = prompt('Р¦РІРµС‚ Р°РІС‚Рѕ?', '') ?? 'РҐР— РєР°РєР°СЏ';
 
 const auto2 = Object.create(auto);
 
-auto.mark = prompt('Марка авто?');
+auto.mark = prompt('РњР°СЂРєР° Р°РІС‚Рѕ?');
 if(auto.mark == null || auto.mark == ""){
- auto.mark ='ХЗ какая';    
+ auto.mark ='РҐР— РєР°РєР°СЏ';    
 };
 
 const auto2 = Object.create(auto);
@@ -801,7 +816,16 @@ auto2.itsAuto();
 
 
 
-//Массивы
+
+
+
+//РњР°СЃСЃРёРІС‹
+
+
+
+
+
+
 
 
 
@@ -829,7 +853,7 @@ arr.pop();
 arr.push(12);
 
 arr.forEach(function (item, i, arr) {
-	console.log(`Элемент массива ${item} идет по порядку ${i} в массиве ${arr}`);
+	console.log(`Р­Р»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° ${item} РёРґРµС‚ РїРѕ РїРѕСЂСЏРґРєСѓ ${i} РІ РјР°СЃСЃРёРІРµ ${arr}`);
 });
 
 for (let i = 0; i < arr.length; i++) {
@@ -852,25 +876,25 @@ document.write(whois.join('; '));
 
 let men = [];
 
-men[0] = prompt('Ваше имя', '');
-men[1] = prompt('Фамилия', '');
-men[2] = +prompt('Возраст', '');
+men[0] = prompt('Р’Р°С€Рµ РёРјСЏ', '');
+men[1] = prompt('Р¤Р°РјРёР»РёСЏ', '');
+men[2] = +prompt('Р’РѕР·СЂР°СЃС‚', '');
 
 if (men[2] >= 18) {
-	men[2] = `Bам ${men[2]} лет`;
-	alert(`${men[0]}, добро пожаловать на сайт`);
-	men[3] = prompt('Введите ваш пароль');
+	men[2] = `BР°Рј ${men[2]} Р»РµС‚`;
+	alert(`${men[0]}, РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° СЃР°Р№С‚`);
+	men[3] = prompt('Р’РІРµРґРёС‚Рµ РІР°С€ РїР°СЂРѕР»СЊ');
 } else {
-	men[2] = `Bам слишком мало лет`;
-	alert(`${men[0]}, этот сайт только для совершеннолетних`);
+	men[2] = `BР°Рј СЃР»РёС€РєРѕРј РјР°Р»Рѕ Р»РµС‚`;
+	alert(`${men[0]}, СЌС‚РѕС‚ СЃР°Р№С‚ С‚РѕР»СЊРєРѕ РґР»СЏ СЃРѕРІРµСЂС€РµРЅРЅРѕР»РµС‚РЅРёС…`);
 }
 
-alert(men.pop()); // удаляем последний элемент и выводим его
-men.shift(); // массива первый элемент
+alert(men.pop()); // СѓРґР°Р»СЏРµРј РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ Рё РІС‹РІРѕРґРёРј РµРіРѕ
+men.shift(); // РјР°СЃСЃРёРІР° РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 
-men.push(`Вот так, ${men[0]}`); // Добавляет элемент в конец массива
+men.push(`Р’РѕС‚ С‚Р°Рє, ${men[0]}`); // Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РєРѕРЅРµС† РјР°СЃСЃРёРІР°
 
-men.unshift(`Пользователь #1 имеет свойства:`); //Добавляет элемент в начало массива
+men.unshift(`РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ #1 РёРјРµРµС‚ СЃРІРѕР№СЃС‚РІР°:`); //Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РЅР°С‡Р°Р»Рѕ РјР°СЃСЃРёРІР°
 men.join(', ');
 
 console.log(men);
@@ -881,7 +905,7 @@ for (let item of men) {
 	console.log(item);
 }
 
-men.length = 2; // укорачиваем до двух элементов
+men.length = 2; // СѓРєРѕСЂР°С‡РёРІР°РµРј РґРѕ РґРІСѓС… СЌР»РµРјРµРЅС‚РѕРІ
 
 men.forEach(function (a, b, c) {
 	console.log(`${a}: ${b}`);
@@ -898,7 +922,27 @@ for (let i = 0; i < men.length; i++) {
 
 
 
-// Динамическая типизация данных
+
+
+
+
+
+
+
+
+
+
+// Р”РёРЅР°РјРёС‡РµСЃРєР°СЏ С‚РёРїРёР·Р°С†РёСЏ РґР°РЅРЅС‹С…
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -942,7 +986,19 @@ console.log(typeof(!!'4'));
 
 
 
-//Получение элементов со страницы
+
+
+
+
+//РџРѕР»СѓС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ СЃРѕ СЃС‚СЂР°РЅРёС†С‹
+
+
+
+
+
+
+
+
 
 
 
@@ -990,7 +1046,10 @@ console.log(typeof(!!'4'));
 
 
 
-// Получение элементов со страницы
+
+
+
+// РџРѕР»СѓС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ СЃРѕ СЃС‚СЂР°РЅРёС†С‹
 
 
 
@@ -1000,6 +1059,13 @@ console.log(typeof(!!'4'));
 
 
 
+
+
+
+
+
+
+/*
 const box = document.getElementById('box');
             
 const buttons = document.getElementsByTagName('button');
@@ -1009,11 +1075,11 @@ console.log(button);
 console.log(buttons[3]);
 
 
-const circles = document.getElementsByClassName('circle');// выводит объект
+const circles = document.getElementsByClassName('circle');// РІС‹РІРѕРґРёС‚ РѕР±СЉРµРєС‚
 console.log(circles);
 console.log(circles[2])
 
-const hearts = document.querySelectorAll('.heart'); // выводит массив
+const hearts = document.querySelectorAll('.heart'); // РІС‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ
 
 hearts.forEach(item => {
 console.log(item);
@@ -1021,7 +1087,76 @@ console.log(item);
 
 // console.log(hearts);
 
-const oneHeart = document.querySelector('.heart'); // выводит первый элемент . который попался в DOM
+const oneHeart = document.querySelector('.heart'); // РІС‹РІРѕРґРёС‚ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ . РєРѕС‚РѕСЂС‹Р№ РїРѕРїР°Р»СЃСЏ РІ DOM
 
 console.log(oneHeart);
+*/
 
+
+
+
+
+
+
+
+
+
+// Р”РµР№СЃС‚РІРёРµ СЃ СЌР»РµРјРµРЅС‚Р°РјРё РЅР° СЃС‚СЂР°РЅРёС†Рµ
+
+
+
+
+
+
+
+
+
+
+const box = document.getElementById('box'),
+	btns = document.getElementsByTagName('button'),
+	circle = document.getElementsByClassName('circle'),
+	hearts = document.querySelectorAll('.heart'),
+	oneHeart = document.querySelector('.heart'),
+  wrapper = document.querySelector('.wrapper');
+// console.dir(box);
+
+// box.style.backgroundColor = 'green';
+
+// box.style.width = '500px';
+
+// let num = +prompt('Р›РµРІС‹Р№ РѕС‚СЃС‚СѓРї?', '');
+
+// box.style.cssText = `position: relative; top: -10px; left: ${num}px`;
+
+// btns[1].style.border = '3px solid red';
+
+// circle[2].style.backgroundColor = 'green';
+
+
+
+// for (let i = 0; i < hearts.length; i++){
+//    hearts[i].style.backgroundColor = 'green';
+// };
+
+
+// hearts.forEach(item => {
+//   item.style.backgroundColor = 'green';
+// })
+
+
+const div = document.createElement('div');
+const title = document.createElement('span');
+const boxTwo = document.createElement('div');
+
+// const text = document.createTextNode('Element');
+
+div.classList.add('black');
+title.classList.add('h2style');
+boxTwo.classList.add('itembox');
+
+
+document.body.append(div);
+document.body.append('stroka');
+
+wrapper.append(title);
+document.body.prepend(boxTwo);
