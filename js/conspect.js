@@ -1114,10 +1114,10 @@ console.log(oneHeart);
 
 const box = document.getElementById('box'),
 	btns = document.getElementsByTagName('button'),
-	circle = document.getElementsByClassName('circle'),
-	hearts = document.querySelectorAll('.heart'),
-	oneHeart = document.querySelector('.heart'),
-  wrapper = document.querySelector('.wrapper');
+	circles = document.getElementsByClassName('circle'),
+	wrapper = document.querySelector('.wrapper'),
+	hearts = wrapper.querySelectorAll('.heart'),
+	oneHeart = wrapper.querySelector('.heart');
 // console.dir(box);
 
 // box.style.backgroundColor = 'green';
@@ -1155,8 +1155,30 @@ title.classList.add('h2style');
 boxTwo.classList.add('itembox');
 
 
-document.body.append(div);
-document.body.append('stroka');
+// document.body.append(div);
+// document.body.append('stroka');
+// wrapper.append(title);
 
-wrapper.append(title);
-document.body.prepend(boxTwo);
+wrapper.appendChild(div);
+
+// wrapper.insertBefore(div, hearts[1]); // СТАРЫЙ МЕТОД
+// circles.removeChild(hearts[1]); // СТАРЫЙ МЕТОД
+// wrapper.replaceChildren(circles[1], hearts[1]); // СТАРЫЙ МЕТОД
+
+// document.body.prepend(boxTwo);
+// hearts[1].before(boxTwo);
+hearts[1].after(boxTwo);
+
+// circles[1].style.background = 'green';
+// circles[1].remove();
+
+// hearts[2].replaceWith(circles[1]); // заменить элемент
+
+div.innerHTML = '<h1>insert text</h1>'; //Работает с HTML и текстом
+boxTwo.textContent = 'Hello'; //Работает только с текстом
+
+boxTwo.insertAdjacentHTML( "afterbegin", '<h3>wiord 11</h3>');
+boxTwo.insertAdjacentHTML("beforebegin", '<h3>wiord 22</h3>');
+boxTwo.insertAdjacentHTML("afterend", '<h3>wiord 33</h3>');
+
+
