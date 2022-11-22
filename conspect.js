@@ -1112,12 +1112,12 @@ console.log(oneHeart);
 
 
 
-const box = document.getElementById('box'),
-	btns = document.getElementsByTagName('button'),
-	circles = document.getElementsByClassName('circle'),
-	wrapper = document.querySelector('.wrapper'),
-	hearts = wrapper.querySelectorAll('.heart'),
-	oneHeart = wrapper.querySelector('.heart');
+// const box = document.getElementById('box'),
+// 	btns = document.getElementsByTagName('button'),
+// 	circles = document.getElementsByClassName('circle'),
+// 	wrapper = document.querySelector('.wrapper'),
+// 	hearts = wrapper.querySelectorAll('.heart'),
+// 	oneHeart = wrapper.querySelector('.heart');
 // console.dir(box);
 
 // box.style.backgroundColor = 'green';
@@ -1144,22 +1144,22 @@ const box = document.getElementById('box'),
 // })
 
 
-const div = document.createElement('div');
-const title = document.createElement('span');
-const boxTwo = document.createElement('div');
+// const div = document.createElement('div');
+// const title = document.createElement('span');
+// const boxTwo = document.createElement('div');
 
 // const text = document.createTextNode('Element');
 
-div.classList.add('black');
-title.classList.add('h2style');
-boxTwo.classList.add('itembox');
+// div.classList.add('black');
+// title.classList.add('h2style');
+// boxTwo.classList.add('itembox');
 
 
 // document.body.append(div);
 // document.body.append('stroka');
 // wrapper.append(title);
 
-wrapper.appendChild(div);
+// wrapper.appendChild(div);
 
 // wrapper.insertBefore(div, hearts[1]); // СТАРЫЙ МЕТОД
 // circles.removeChild(hearts[1]); // СТАРЫЙ МЕТОД
@@ -1167,18 +1167,382 @@ wrapper.appendChild(div);
 
 // document.body.prepend(boxTwo);
 // hearts[1].before(boxTwo);
-hearts[1].after(boxTwo);
+// hearts[1].after(boxTwo);
 
 // circles[1].style.background = 'green';
 // circles[1].remove();
 
 // hearts[2].replaceWith(circles[1]); // заменить элемент
 
-div.innerHTML = '<h1>insert text</h1>'; //Работает с HTML и текстом
-boxTwo.textContent = 'Hello'; //Работает только с текстом
+// div.innerHTML = '<h1>insert text</h1>'; //Работает с HTML и текстом
+// boxTwo.textContent = 'Hello'; //Работает только с текстом
 
-boxTwo.insertAdjacentHTML( "afterbegin", '<h3>wiord 11</h3>');
-boxTwo.insertAdjacentHTML("beforebegin", '<h3>wiord 22</h3>');
-boxTwo.insertAdjacentHTML("afterend", '<h3>wiord 33</h3>');
+// boxTwo.insertAdjacentHTML( "afterbegin", '<h3>wiord 11</h3>');
+// boxTwo.insertAdjacentHTML("beforebegin", '<h3>wiord 22</h3>');
+// boxTwo.insertAdjacentHTML("afterend", '<h3>wiord 33</h3>');
+
+
+
+
+
+
+
+
+
+
+// HTML Атрибуты и свойства 
+
+
+
+
+
+
+
+
+
+
+// for (let li of list) {
+// 	li.setAttribute('id', 'liitem');
+// }
+
+// console.log(tableOne.getAttribute('id')); // получает значение атрибута.
+
+// console.log(formSearch.hasAttribute('name')); //проверяет наличие атрибута.
+
+// formSearch.setAttribute('name', 'search2'); //устанавливает значение атрибута.
+
+// console.log(formSearch.getAttribute('name'));
+
+// tableOne.removeAttribute('id'); // удаляет атрибут.
+
+// tableOne.attributes //– это коллекция всех атрибутов.
+
+
+// // setTimeout(() => document.body.style.background = '', 5000); // а через  5 секунд  вернём как было
+
+// console.log(location.href);
+// if (confirm('Перейти по ссылке')){
+//   location.href = 'https://ya.ru';
+// }
+
+// let elements = document.querySelectorAll('ul > li:last-child');
+
+
+
+
+
+
+
+
+
+//Изменение документа
+
+
+
+
+
+// let btn = document.querySelector('input[name = "message"]');
+// let btn2 = document.querySelector('input[name = "clone"]');
+// let tableOne = document.getElementById('table-num');
+// let btn3 = document.querySelector('input[name = "addtd"]');
+
+
+
+// btn.addEventListener('click', e => {
+// let div = document.createElement('div');
+// div.className = 'alert';
+// div.innerHTML = '<strong>Всем привет!</strong> Вы прочитали важное сообщение.';
+//   setTimeout(() => div.remove(), 1000);
+// document.body.append(div);
+// });
+
+
+
+// btn2.addEventListener('click', e => {
+// 	let divTwo = tableOne.cloneNode(true); // Клонирование узлов: cloneNode
+// 	tableOne.after(divTwo);
+// });
+
+
+// btn3.addEventListener('click', e => {
+// ;
+
+// function getItem() {
+
+// let newTr = [];
+
+// 	for (let i = 1; i <= 5; i++) {
+// 		let td = document.createElement('td');
+//     td.append(i);
+// 		newTr.push(td);
+// 	}
+//   console.dir(newTr);
+// 	return newTr;
+// }
+
+// item.append(...getItem());
+
+// },{once: true});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Событие на странице
+
+
+
+
+
+
+
+
+
+// let tableOne = document.getElementById('table-num');
+// let formSearch = document.querySelector('form[name="search"]');
+// let input = formSearch.querySelector('input');
+// let addBtn = document.querySelector('input[name = "add"]');
+// let delBtn = document.querySelector('input[name = "del"]');
+// let list = document.querySelectorAll('ul > li');
+
+// tableOne.rows[1].cells[1].style.background = '#6c4c';
+
+// console.log(list);
+// console.log(input);
+// console.log(addBtn);
+// console.dir(searchBtn); //выводит элемент в виде DOM-объекта, что удобно для анализа его свойств.
+
+// addBtn.addEventListener('click', e => {
+// 	let infLi = prompt('ЗНАЧЕНИЕ', '');
+// 	while (infLi == null) {
+// 		infLi = prompt('ЗНАЧЕНИЕ', '');
+// 	}
+
+// 	let li = document.createElement('li');
+// 	li.textContent = `Новое свойство: ${infLi}`;
+// 	list[0].after(li);
+// });
+
+// delBtn.addEventListener ('click', e =>{
+// list[1].remove();
+// });
+
+// Свойство «hidden» указывает на то, видим ли мы элемент или нет
+
+// delBtn.addEventListener('click', e => {
+// 	list[1].hidden = true;
+// });
+
+
+
+
+
+// const btns = document.querySelectorAll('button'),
+//       btn2 = document.getElementById('btn2'),
+//       btn3 = document.getElementById('btn3'),
+//       overlay = document.querySelector('.overlay')
+
+// btn.addEventListener('click', (event) => {
+//   console.log(event);
+//   document.body.append('click1');
+// });
+
+// btn2.addEventListener('click', (e) => {
+//   e.target = confirm('Delete?');
+//   if(e.target == true){
+//     e.target.remove();
+//   } console.log('no delete');
+// });
+
+// let i = 0;
+// const deleteElem = (e) => {
+//   console.log(e.currentTarget);
+//   console.log(e.target);
+//   console.log(e.type);
+//   document.body.style.backgroundColor = 'red';
+  // e.target.remove();
+  // i++;
+  // if (i == 1){
+  //     btn3.removeEvenListener('click', deleteElem); // удаление события
+  // };
+// };
+
+// btns[1].addEventListener('click', deleteElem); // создание события
+// overlay.addEventListener('click', deleteElem); // всплытие событий
+
+
+// вешаем сразу на несколько элементов обработчик
+
+
+// for (let btn of btns){
+//  btn.addEventListener('click', deleteElem);
+// };
+
+
+// btns.forEach (btn =>{
+// 	btn.addEventListener('click', deleteElem, {once: true}); // метод addEventListener - выполнить один раз once: true
+// })
+
+
+
+// const link = document.querySelector('a');
+
+// link.addEventListener('click', (event) => {
+//       event.preventDefault();   // отмена стандартного события браузера
+
+//      console.log(event.target); 
+// });
+
+
+
+// // setTimeout(() => document.body.style.background = '', 5000); // а через  5 секунд  вернём как было
+
+// console.log(location.href);
+// if (confirm('Перейти по ссылке')){
+//   location.href = 'https://ya.ru';
+// }
+
+// let elements = document.querySelectorAll('ul > li:last-child');
+
+
+
+
+
+
+
+
+
+
+
+
+//Стили и классы
+
+
+
+
+
+
+
+
+
+// elem.classList.add/remove("class") //– добавить/удалить класс.
+// elem.classList.toggle("class") //– добавить класс, если его нет, иначе удалить.
+// elem.classList.contains("class")// – проверка наличия класса, возвращает true/false.
+
+// elem.style.width = '100px';
+
+// div.style.cssText = `color: red !important;
+//   background-color: yellow;
+//   width: 100px;
+//   text-align: center;
+// `;
+
+// div.setAttribute('style', 'color: red...')
+
+
+// getComputedStyle(element, [pseudo]); // получение стиля, 
+
+// element
+//     Элемент, значения для которого нужно получить
+// pseudo
+//     Указывается, если нужен стиль псевдоэлемента, например ::before. Пустая строка или отсутствие аргумента означают сам элемент. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Размеры и прокрутка элементов
+
+
+
+
+
+
+
+// console.log(example.offsetParent); // «самыми внешними» метриками
+
+// console.log(example.offsetLeft);//cодержат координаты x/y относительно верхнего левого угла
+// console.log(example.offsetTop);
+
+// console.log(example.offsetWidth); //  внешняя ширина блока
+// console.log(example.offsetHeight); //внешняя высота блока
+
+
+//отступы внутренней части элемента от внешней.
+// console.log(example.clientLeft); //ширина левой рамки
+// console.log(example.clientTop); //ширина верхней рамки
+
+//Эти свойства – размер области внутри рамок элемента.
+// console.log(example.clientHeight);
+// console.log(example.clientWidth);
+
+
+// console.log(example.scrollHeight);//полная внутренняя высота, включая прокрученную область.
+// console.log(example.scrollWidth);//hолная внутренняя ширина, в
+
+
+
+// распахнуть элемент на всю высоту
+// element.style.height = `${element.scrollHeight}px`;
+// let btnView = document.getElementById('showAll');
+// btnView.addEventListener('click', e => {
+// 	example.style.height = `${example.scrollHeight}px`;
+// btnView.setAttribute('style', 'display: none;');
+// }
+// );
+
+
+
+//При клике на следующий элемент будет выполняться код elem.scrollTop += 10. Поэтому он будет прокручиваться на 10px вниз.
+// let a = document.getElementById('example');
+// a.addEventListener('click', e =>{
+//     a.scrollTop += 20;
+// });
+
+
+
+//задача с мячом
+// let ball = document.getElementById('ball');
+// ball.addEventListener('mouseover', e =>{
+// ball.style.left = Math.round(field.clientWidth / 2 - ball.offsetWidth / 2) + 'px';
+// ball.style.top = Math.round(field.clientHeight / 2 - ball.offsetHeight / 2) + 'px';
+// });
+
+
+
+
+
+
+
+
 
 
